@@ -1,0 +1,38 @@
+/* Group titles and article links have distinct weights and indentation. */
+.VPSidebar .VPSidebarItem.level-0 > .item > .text {
+  color: var(--vp-c-text-1);
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.VPSidebar .VPSidebarItem.level-1 > .item > .link {
+  padding: 2px 8px;
+  margin: 1px 0 1px 8px;
+  border-radius: 6px;
+}
+
+.VPSidebar .VPSidebarItem.level-1 > .item > .link > .text {
+  color: var(--vp-c-text-2);
+  font-weight: 400;
+}
+
+.VPSidebar .VPSidebarItem.level-1 > .item > .link:hover > .text,
+.VPSidebar .VPSidebarItem.level-1 > .item > .link:focus-visible > .text {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.VPSidebar .VPSidebarItem.level-1 > .item > .link:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+.VPSidebar .VPSidebarItem.level-1.is-active > .item > .link {
+  background-color: var(--vp-c-brand-soft);
+}
+
+.VPSidebar .VPSidebarItem.level-1.is-active > .item > .link > .text {
+  color: var(--vp-c-brand-1);
+  font-weight: 700;
+}
